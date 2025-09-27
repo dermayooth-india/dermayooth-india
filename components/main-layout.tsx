@@ -7,6 +7,7 @@ import { Menu, X, ShoppingCart, Instagram, MessageCircle, Search, Settings } fro
 import { Button } from "@/components/ui/button"
 import { CartProvider, useCart } from "@/context/cart-context"
 
+
 // Create a separate component for the cart button that uses the cart context
 function CartButton() {
   const { cartItems } = useCart()
@@ -58,9 +59,8 @@ function MainLayoutContent({ children }) {
     <div className="min-h-screen flex flex-col bg-white">
       {/* Header */}
       <header
-        className={`${isHomePage ? "absolute top-0 left-0 right-0 z-40" : "sticky top-0 z-40"} transition-all duration-300 ${
-          scrolled ? "bg-white shadow-sm" : isHomePage ? "bg-transparent" : "bg-white"
-        }`}
+        className={`${isHomePage ? "absolute top-0 left-0 right-0 z-40" : "sticky top-0 z-40"} transition-all duration-300 ${scrolled ? "bg-white shadow-sm" : isHomePage ? "bg-transparent" : "bg-white"
+          }`}
       >
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-24">
@@ -104,9 +104,8 @@ function MainLayoutContent({ children }) {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`block py-2 px-3 rounded-md bookman ${
-                  pathname === item.href ? "bg-gray-100 text-black" : "text-black hover:bg-gray-50"
-                }`}
+                className={`block py-2 px-3 rounded-md bookman ${pathname === item.href ? "bg-gray-100 text-black" : "text-black hover:bg-gray-50"
+                  }`}
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
@@ -207,10 +206,17 @@ function MainLayoutContent({ children }) {
         href="https://wa.me/917977150012"
         target="_blank"
         rel="noopener noreferrer"
-        className="whatsapp-button hover-effect bg-black"
         aria-label="Chat on WhatsApp"
+        className="whatsapp-button hover-effect  flex items-center justify-center rounded-full p-2 "
       >
-        <MessageCircle className="h-6 w-6" />
+        {/* <MessageCircle className="h-6 w-6" /> */}
+          <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 32 32"
+    className="h-8 w-8 fill-white"
+  >
+    <path d="M16.003 3C9.375 3 4 8.373 4 15c0 2.653.847 5.11 2.279 7.127L4 29l7.042-2.252A11.92 11.92 0 0016.003 27C22.63 27 28 21.627 28 15S22.63 3 16.003 3zm5.993 17.084c-.26.732-1.522 1.39-2.096 1.48-.557.084-1.265.12-2.044-.127-.472-.15-1.082-.352-1.862-.688-3.284-1.423-5.418-4.73-5.588-4.953-.167-.223-1.332-1.772-1.332-3.387 0-1.615.84-2.413 1.137-2.74.296-.328.648-.41.864-.41.221 0 .432.002.622.011.2.01.466-.075.73.557.26.63.88 2.181.958 2.339.074.16.123.348.023.56-.098.211-.148.347-.296.53-.148.184-.311.41-.442.551-.148.16-.302.335-.13.657.167.328.744 1.226 1.595 1.986 1.098.98 1.986 1.288 2.318 1.436.331.148.524.13.717-.078.186-.205.865-.99 1.094-1.33.229-.347.46-.275.764-.165.296.11 1.872.883 2.192 1.043.328.168.544.25.624.389.082.138.082.798-.178 1.53z"/>
+  </svg>
       </a>
     </div>
   )

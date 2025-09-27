@@ -60,11 +60,11 @@ export const POST = authMiddleware(async (req: NextRequest) => {
     const { error, value } = productValidation.validate(body);
 
     if (error) {
-      console.error("Product validation failed:", error.details);
+      console.error("Product validation failed:", error.message);
       return NextResponse.json(
         {
           error: "Validation error",
-          details: error.details.map((d) => d.message),
+          details: error.message,
         },
         { status: 400 }
       );

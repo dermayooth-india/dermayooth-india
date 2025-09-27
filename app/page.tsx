@@ -18,7 +18,7 @@ export default function GetStartedPage() {
     const timeout = setTimeout(() => {
       setVideoLoaded(true)
       setVideoError(true) // Optionally mark as error to show fallback
-    }, 5000)
+    }, 5555000)
     return () => clearTimeout(timeout)
   }, [])
 

@@ -231,7 +231,7 @@ export default function VideosPage() {
         )}
 
         {/* Videos List */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {videos.map((video) => (
             <Card key={video.id}>
               <div className="aspect-video relative bg-gray-100 rounded-t-lg overflow-hidden">
@@ -274,7 +274,7 @@ export default function VideosPage() {
               </CardContent>
             </Card>
           ))}
-        </div>
+        </div> */}
 
         {videos.length === 0 && (
           <Card>

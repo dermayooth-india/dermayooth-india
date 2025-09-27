@@ -287,7 +287,7 @@ function ProductDetailContent() {
           {/* Detailed Product Information Tabs */}
           <div className="border-t border-gray-200">
             <Tabs defaultValue="details" className="p-6 md:p-10">
-              <TabsList className="grid grid-cols-4 mb-6 bg-gray-100">
+              <TabsList className="grid grid-cols-2 md:grid-cols-4 mb-16 bg-gray-100">
                 <TabsTrigger
                   value="details"
                   className="data-[state=active]:bg-gray-900 data-[state=active]:text-white hover-effect"
@@ -302,13 +302,13 @@ function ProductDetailContent() {
                 </TabsTrigger>
                 <TabsTrigger
                   value="usage"
-                  className="data-[state=active]:bg-gray-900 data-[state=active]:text-white hover-effect"
+                  className="data-[state=active]:bg-gray-900 data-[state=active]:text-white hover-effect bg-gray-100"
                 >
                   How to Use
                 </TabsTrigger>
                 <TabsTrigger
                   value="reviews"
-                  className="data-[state=active]:bg-gray-900 data-[state=active]:text-white hover-effect"
+                  className="data-[state=active]:bg-gray-900 data-[state=active]:text-white hover-effect bg-gray-100"
                 >
                   Reviews
                 </TabsTrigger>
@@ -335,15 +335,15 @@ function ProductDetailContent() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="bg-gray-50 p-4 rounded-md">
                       <h5 className="font-medium mb-2 bell-mt">Size</h5>
-                      <p className="text-gray-700 bookman">30gm</p>
+                      <p className="text-gray-700 bookman">{product.specifications.size}</p>
                     </div>
                     <div className="bg-gray-50 p-4 rounded-md">
                       <h5 className="font-medium mb-2 bell-mt">Skin Type</h5>
-                      <p className="text-gray-700 bookman">All Skin Types</p>
+                      <p className="text-gray-700 bookman">{product.specifications.skinType}</p>
                     </div>
                     <div className="bg-gray-50 p-4 rounded-md">
                       <h5 className="font-medium mb-2 bell-mt">Shelf Life</h5>
-                      <p className="text-gray-700 bookman">24 Months</p>
+                      <p className="text-gray-700 bookman">{product.specifications.shelfLife}</p>
                     </div>
                     <div className="bg-gray-50 p-4 rounded-md">
                       <h5 className="font-medium mb-2 bell-mt">Made In</h5>
@@ -355,70 +355,24 @@ function ProductDetailContent() {
 
               <TabsContent value="ingredients" className="space-y-4">
                 <h3 className="text-xl font-normal mb-4 bell-mt tracking-wide">Ingredients</h3>
-                <div className="bg-blue-900 text-yellow-200 p-6 rounded-md">
+                <div className=" p-6 rounded-md">
                   <h4 className="text-lg font-normal mb-3 bell-mt tracking-wide">INGREDIENTS:</h4>
-                  <p className="text-yellow-200 mb-6 bookman">
-                    Aqua, Glycerine, Polyacrylamide (and) C13-14 Isoparaffin (and) C9-11 Pareth-6, Glyceryl Stearate And
-                    Peg 100 Stearate, Cetosteryl Alcohol, Mct Oil, Cyclopentasiloxane And Dimethiconol, Phenoxyethanol
-                    And Ethylhexylglycerin, Kojic Acid Dipalmitate, Retinol, Butyrospermum Parkii (Shea Butter),
-                    Biosaccharide Gum-1, Perfume, Approved Colour, Alpha-arbutin, Lime Pearl AF, Licorice Extract,
-                    Mulberry Extract, Butylated Hydroxy Toluene (BHT), Vitamin E (Tocopheryl Acetate), Disodium EDTA,
-                    Paeonia Officinalis Leaf Extract, Quercetin, Ellagic Acid
-                  </p>
+                  <p className="mb-6 bookman">{product.ingredients}</p>
                 </div>
 
-                <div className="mt-6">
-                  <h4 className="text-lg font-normal mb-3 bell-mt tracking-wide">Key Ingredients:</h4>
-                  <ul className="space-y-4">
-                    <li>
-                      <h5 className="font-medium bell-mt">Kojic Acid Dipalmitate</h5>
-                      <p className="text-gray-700 bookman text-sm">
-                        Helps brighten skin and reduce the appearance of dark spots.
-                      </p>
-                    </li>
-                    <li>
-                      <h5 className="font-medium bell-mt">Retinol</h5>
-                      <p className="text-gray-700 bookman text-sm">Promotes skin renewal and improves skin texture.</p>
-                    </li>
-                    <li>
-                      <h5 className="font-medium bell-mt">Alpha-arbutin</h5>
-                      <p className="text-gray-700 bookman text-sm">
-                        Helps reduce hyperpigmentation and even skin tone.
-                      </p>
-                    </li>
-                    <li>
-                      <h5 className="font-medium bell-mt">Shea Butter</h5>
-                      <p className="text-gray-700 bookman text-sm">Provides deep moisturization and nourishment.</p>
-                    </li>
-                    <li>
-                      <h5 className="font-medium bell-mt">Licorice & Mulberry Extract</h5>
-                      <p className="text-gray-700 bookman text-sm">
-                        Natural brightening agents that help even skin tone.
-                      </p>
-                    </li>
-                  </ul>
-                </div>
               </TabsContent>
 
               <TabsContent value="usage" className="space-y-4">
                 <h3 className="text-xl font-normal mb-4 bell-mt tracking-wide">How to Use</h3>
 
-                <div className="bg-blue-900 text-yellow-200 p-6 rounded-md mb-6">
+                <div className=" p-6 rounded-md mb-6">
                   <h4 className="text-lg font-normal mb-3 bell-mt tracking-wide">DIRECTION FOR USE:</h4>
                   <ol className="space-y-2 list-decimal pl-5">
-                    <li className="text-yellow-200 bookman">Wash Your Face With Face Wash/ Soap And Pat Dry.</li>
-                    <li className="text-yellow-200 bookman">
-                      Apply Our Cream To Your Face. Massage Gently With Wet Fingers.
-                    </li>
-                    <li className="text-yellow-200 bookman">
-                      Enjoy The Instant Incredible Result Of Your Specially Blend Formula.
-                    </li>
+                    {product.directions.split(', ').map((directions, index) => (
+                    <li className=" bookman"key={index}>{directions.trim()}</li>
+                     ))}
+                    
                   </ol>
-                  <p className="mt-4 text-yellow-200 bookman">
-                    Recommended a Patch Test Before First Use. Discontinue If Redness/ Inflammation/ Irritation Occurs.
-                    Avoid Using On Inflamed Skin. Store In a Cool, Dry Place. Away From Direct Sunlight. Do Not Freeze.
-                    Keep Out Of Reach Of Children.
-                  </p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

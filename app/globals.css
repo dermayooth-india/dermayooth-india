@@ -84,7 +84,7 @@
   bottom: 20px;
   right: 20px;
   z-index: 100;
-  background-color: #000000;
+  background-color: #0eaa00;
   color: white;
   border-radius: 50%;
   width: 60px;
@@ -155,12 +155,12 @@
 .bell-mt {
   font-family: "Bell MT", serif;
   letter-spacing: 0.08em;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 ;
 }
 
 .bookman {
   font-family: "Bookman Old Style", serif;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 0;
 }
 
 .slide-in {
@@ -333,7 +333,7 @@
 .video-text {
   position: relative;
   z-index: 2;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  text-shadow: ;
 }
 
 /* Better button styles */

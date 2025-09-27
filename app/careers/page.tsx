@@ -13,7 +13,7 @@ export default function CareersPage() {
         <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-sm p-8 mb-12">
           <h2 className="text-2xl font-bold mb-6 bell-mt text-gray-800">We Are Hiring</h2>
           <p className="mb-6 bookman text-gray-700">
-            At DERRMAYOOTH, we're always looking for talented and passionate individuals to join our growing team. If
+            At DERMAYOOTH, we're always looking for talented and passionate individuals to join our growing team. If
             you're enthusiastic about skincare, innovation, and making a difference in people's lives, we'd love to hear
             from you.
           </p>
@@ -24,7 +24,7 @@ export default function CareersPage() {
           </p>
 
           <div className="mb-8">
-            <h3 className="text-xl font-semibold mb-3 bell-mt">Why Join DERRMAYOOTH?</h3>
+            <h3 className="text-xl font-semibold mb-3 bell-mt">Why Join DERMAYOOTH?</h3>
             <ul className="space-y-2 bookman text-gray-700">
               <li className="flex items-start">
                 <span className="text-green-600 mr-2">✓</span>
@@ -52,7 +52,7 @@ export default function CareersPage() {
           <div className="bg-gray-50 p-6 rounded-lg">
             <h3 className="text-xl font-semibold mb-4 bell-mt">Submit Your Application</h3>
             <p className="mb-4 bookman text-gray-700">
-              Please submit your resume and a brief cover letter telling us why you'd like to join the DERRMAYOOTH team.
+              Please submit your resume and a brief cover letter telling us why you'd like to join the DERMAYOOTH team.
             </p>
             <form className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -122,7 +122,7 @@ export default function CareersPage() {
                 <textarea
                   id="coverLetter"
                   className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 h-32"
-                  placeholder="Tell us about yourself and why you're interested in joining DERRMAYOOTH"
+                  placeholder="Tell us about yourself and why you're interested in joining DERMAYOOTH"
                 ></textarea>
               </div>
 
@@ -134,10 +134,10 @@ export default function CareersPage() {
         </div>
 
         <div className="text-center text-gray-600 bookman">
-          <p>For any questions regarding careers at DERRMAYOOTH, please contact us at:</p>
+          <p>For any questions regarding careers at DERMAYOOTH, please contact us at:</p>
           <p className="mt-2">
-            <a href="mailto:careers@derrmayooth.com" className="text-green-600 hover:underline">
-              careers@derrmayooth.com
+            <a href="mailto:careers@DERMAYOOTH.com" className="text-green-600 hover:underline">
+              careers@DERMAYOOTH.com
             </a>
           </p>
         </div>

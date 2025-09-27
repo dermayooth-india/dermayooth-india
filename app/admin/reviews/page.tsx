@@ -105,7 +105,7 @@ export default function ReviewsPage() {
           <p className="text-gray-600 bookman">Manage customer reviews and feedback</p>
         </div>
 
-        <div className="grid gap-6">
+        {/* <div className="grid gap-6">
           {reviews.map((review) => (
             <Card key={review.id}>
               <CardHeader>
@@ -170,9 +170,9 @@ export default function ReviewsPage() {
               </CardContent>
             </Card>
           ))}
-        </div>
+        </div> */}
 
-        {reviews.length === 0 && (
+        {reviews.length === 0 || reviews.length == 0 && (
           <Card>
             <CardContent className="text-center py-12">
               <h3 className="text-lg font-medium text-gray-900 mb-2">No reviews found</h3>

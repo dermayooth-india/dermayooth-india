@@ -166,40 +166,40 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
             }
 
             // Special handling for Dashboard with dropdown
-            if (item.name === "Dashboard") {
-              return (
-                <DropdownMenu key={index}>
-                  <DropdownMenuTrigger asChild>
-                    <button
-                      className={`w-full flex items-center justify-between px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                        pathname === item.href
-                          ? "bg-black text-white"
-                          : "text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                      }`}
-                    >
-                      <div className="flex items-center">
-                        <item.icon className="h-5 w-5 mr-3" />
-                        {item.name}
-                        {item.badge && (
-                          <Badge variant="secondary" className="ml-2 text-xs">
-                            {item.badge}
-                          </Badge>
-                        )}
-                      </div>
-                      <MoreHorizontal className="h-4 w-4" />
-                    </button>
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent align="start" className="w-48">
-                    <DropdownMenuItem asChild>
-                      <Link href="/admin/dashboard" className="w-full">
-                        <LayoutDashboard className="h-4 w-4 mr-2" />
-                        Dashboard
-                      </Link>
-                    </DropdownMenuItem>
-                  </DropdownMenuContent>
-                </DropdownMenu>
-              )
-            }
+            // if (item.name === "Dashboard") {
+            //   return (
+            //     <DropdownMenu key={index}>
+            //       <DropdownMenuTrigger asChild>
+            //         <button
+            //           className={`w-full flex items-center justify-between px-3 py-2 text-sm font-medium rounded-md transition-colors ${
+            //             pathname === item.href
+            //               ? "bg-black text-white"
+            //               : "text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+            //           }`}
+            //         >
+            //           <div className="flex items-center">
+            //             <item.icon className="h-5 w-5 mr-3" />
+            //             {item.name}
+            //             {item.badge && (
+            //               <Badge variant="secondary" className="ml-2 text-xs">
+            //                 {item.badge}
+            //               </Badge>
+            //             )}
+            //           </div>
+            //           <MoreHorizontal className="h-4 w-4" />
+            //         </button>
+            //       </DropdownMenuTrigger>
+            //       <DropdownMenuContent align="start" className="w-48">
+            //         <DropdownMenuItem asChild>
+            //           <Link href="/admin/dashboard" className="w-full">
+            //             <LayoutDashboard className="h-4 w-4 mr-2" />
+            //             Dashboard
+            //           </Link>
+            //         </DropdownMenuItem>
+            //       </DropdownMenuContent>
+            //     </DropdownMenu>
+            //   )
+            // }
 
             return (
               <Link

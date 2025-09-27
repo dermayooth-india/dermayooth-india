@@ -87,7 +87,7 @@ function ProductsContent() {
   return (
     <div className="bg-white min-h-screen">
       {/* Hero Banner */}
-      <div className="relative h-64 md:h-80 bg-gray-900 overflow-hidden">
+      <div className="relative h-60 md:h-80 lg:h-60 bg-gray-900 overflow-hidden">
         <div className="container mx-auto px-4 h-full flex flex-col justify-center items-center text-white text-center">
           <h1 className="text-4xl md:text-5xl font-normal mb-4 bell-mt tracking-wide">Our Products</h1>
           <p className="max-w-2xl bookman">
