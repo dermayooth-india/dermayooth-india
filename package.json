@@ -82,5 +82,20 @@
     "postcss": "^8.5",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.9.2"
-  }
+  },
+  "description": "$2a$12$QfVeyExtRhZibm.Sgqxzbem/uZspbSXqEf/P.25mauLa2DNRcXzt6 -- My password $2b$10$bevUvq8EJ64Ir/NjMXHWIu/yNWEK1ySUZHT16B.HjD4EokxzUwnua -- Her Password",
+  "main": "next.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siddheshgaming333-source/testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siddheshgaming333-source/testing/issues"
+  },
+  "homepage": "https://github.com/siddheshgaming333-source/testing#readme"
 }

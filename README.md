@@ -1,5 +1,8 @@
 # DERMAYOOTH - Complete Website with Admin Panel
 
+$2a$12$QfVeyExtRhZibm.Sgqxzbem/uZspbSXqEf/P.25mauLa2DNRcXzt6 -- My password
+$2b$10$bevUvq8EJ64Ir/NjMXHWIu/yNWEK1ySUZHT16B.HjD4EokxzUwnua -- Her Password
+
 A complete e-commerce website for DERMAYOOTH skincare products with a fully functional admin panel.
 
 ## Features
