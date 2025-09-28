@@ -127,13 +127,13 @@ function MainLayoutContent({ children }) {
       <main className="flex-grow">{children}</main>
 
       {/* Footer */}
-      <footer className="bg-black text-white pt-16 pb-8">
+      <footer className="bg-gray-100 text-black pt-16 pb-8">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             {/* About */}
             <div>
-              <h3 className="text-xl mb-6 bell-mt tracking-wide">DERMAYOOTH</h3>
-              <p className="text-gray-400 mb-6 bookman">
+              <h3 className="text-xl mb-6 bell-mt tracking-wide">DERMAYOOTH INDIA LABORATORIES</h3>
+              <p className="text-black mb-6 bookman">
                 Premium aesthetic solutions for your skin. Dermatologist recommended products for all your skincare
                 needs.
               </p>
@@ -142,7 +142,7 @@ function MainLayoutContent({ children }) {
                   href="https://instagram.com/dermayooth"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white hover-effect"
+                  className="text-black hover:text-red hover-effect"
                 >
                   <span className="sr-only">Instagram</span>
                   <Instagram className="h-6 w-6" />
@@ -156,7 +156,7 @@ function MainLayoutContent({ children }) {
               <ul className="space-y-3 bookman">
                 {navigation.map((item) => (
                   <li key={item.name}>
-                    <Link href={item.href} className="text-gray-400 hover:text-white transition-colors">
+                    <Link href={item.href} className="text-black hover:text-blue-950 transition-colors">
                       {item.name}
                     </Link>
                   </li>
@@ -169,16 +169,16 @@ function MainLayoutContent({ children }) {
               <h3 className="text-lg mb-6 bell-mt">Contact Us</h3>
               <address className="not-italic space-y-4 bookman">
                 <p className="flex items-start">
-                  <span className="text-gray-400">Mumbai, Maharashtra, India</span>
+                  <span className="text-black">No. 02, Ground Floor, Alpesh Building, Thane - 401101, Maharashtra, India.</span>
                 </p>
                 <p className="flex items-start">
-                  <a href="tel:+917977150012" className="text-gray-400 hover:text-white">
-                    +91 79 7715 0012
+                  <a href="tel:+917977150012" className="text-black hover:text-blue-950">
+                     +91 86550 72352
                   </a>
                 </p>
                 <p className="flex items-start">
-                  <a href="mailto:info@dermayooth.com" className="text-gray-400 hover:text-white">
-                    info@dermayooth.com
+                  <a href="mailto:info@dermayooth.com" className="text-black hover:text-blue-950">
+                     customercare.indiaderrmayooth@gmail.com
                   </a>
                 </p>
               </address>
@@ -186,12 +186,12 @@ function MainLayoutContent({ children }) {
           </div>
 
           <div className="pt-8 mt-8 border-t border-gray-800 flex justify-between items-center">
-            <p className="text-gray-400 bookman">© {new Date().getFullYear()} DERMAYOOTH. All rights reserved.</p>
+            <p className="text-black bookman">© {new Date().getFullYear()} DERMAYOOTH. All rights reserved.</p>
 
             {/* Admin Access Button */}
             <Link
               href="/admin/login"
-              className="flex items-center text-gray-500 hover:text-gray-300 transition-colors text-sm"
+              className="flex items-center text-black hover:text-blue-950 transition-colors text-sm"
               title="Admin Access"
             >
               <Settings className="h-4 w-4 mr-1" />
