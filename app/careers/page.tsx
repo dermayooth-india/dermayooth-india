@@ -1,7 +1,50 @@
+"use client"
+
 import MainLayout from "@/components/main-layout"
 import { Button } from "@/components/ui/button"
 
 export default function CareersPage() {
+  const handleWhatsAppSubmit = (event) => {
+    // 1. Prevent the default form submission behavior
+    event.preventDefault();
+
+    // 2. Your WhatsApp number (include country code, no "+" or spaces)
+    // 3. Get the data from the form fields
+    const name = event.target.name.value;
+    const email = event.target.email.value;
+    const phone = event.target.phone.value;
+    const position = event.target.position.value;
+    const coverLetter = event.target.coverLetter.value;
+
+    // 4. Create the pre-filled message
+    const message = `
+*New Job Application* 
+
+*Full Name:*
+${name}
+
+*Email Address:*
+${email}
+
+*Phone Number:*
+${phone}
+
+*Position of Interest:*
+${position}
+
+*Cover Letter:*
+${coverLetter}
+
+---
+*Please note: I will send my resume/CV via email upon request.*
+    `;
+
+    // 5. Encode the message for the URL
+
+
+    window.open(`https://wa.me/918655072352?text=${message}`, "_blank")
+
+  };
   return (
     <MainLayout>
       <div className="container mx-auto px-4 py-16">
@@ -54,7 +97,7 @@ export default function CareersPage() {
             <p className="mb-4 bookman text-gray-700">
               Please submit your resume and a brief cover letter telling us why you'd like to join the DERMAYOOTH team.
             </p>
-            <form className="space-y-4">
+            {/* <form onSubmit={handleWhatsAppSubmit} className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="name" className="block mb-2 bookman text-sm text-gray-700">
@@ -129,18 +172,107 @@ export default function CareersPage() {
               <Button type="submit" className="w-full bg-green-600 hover:bg-green-700">
                 Submit Application
               </Button>
+            </form> */}
+            <form onSubmit={handleWhatsAppSubmit} className="space-y-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label htmlFor="name" className="block mb-2 bookman text-sm text-gray-700">
+                    Full Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name" // Name attribute is still needed
+                    className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                    placeholder="Your name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block mb-2 bookman text-sm text-gray-700">
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                    placeholder="Your email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label htmlFor="phone" className="block mb-2 bookman text-sm text-gray-700">
+                  Phone Number
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                  placeholder="Your phone number"
+                  required
+                />
+              </div>
+
+              <div>
+                <label htmlFor="position" className="block mb-2 bookman text-sm text-gray-700">
+                  Position of Interest
+                </label>
+                <input
+                  type="text"
+                  id="position"
+                  name="position"
+                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                  placeholder="What role are you interested in?"
+                  required
+                />
+              </div>
+
+              {/* This input will be ignored by the WhatsApp function, but you can keep it for UI */}
+              <div>
+                <label htmlFor="resume" className="block mb-2 bookman text-sm text-gray-700">
+                  Resume/CV (Please email separately)
+                </label>
+                <input
+                  type="file"
+                  id="resume"
+                  name="resume"
+                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                  disabled // Disable the input as it's not used
+                />
+              </div>
+
+              <div>
+                <label htmlFor="coverLetter" className="block mb-2 bookman text-sm text-gray-700">
+                  Cover Letter
+                </label>
+                <textarea
+                  id="coverLetter"
+                  name="coverLetter"
+                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 h-32"
+                  placeholder="Tell us about yourself and why you're interested in joining DERMAYOOTH"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" className="w-full bg-green-600 text-white p-3 rounded-md hover:bg-green-700">
+                Submit via WhatsApp
+              </button>
             </form>
           </div>
         </div>
 
-        <div className="text-center text-gray-600 bookman">
+        {/* <div className="text-center text-gray-600 bookman">
           <p>For any questions regarding careers at DERMAYOOTH, please contact us at:</p>
           <p className="mt-2">
             <a href="mailto:manojnagar@dermayooth.com" className="text-green-600 hover:underline">
               manojnagar@dermayooth.com
             </a>
           </p>
-        </div>
+        </div> */}
       </div>
     </MainLayout>
   )

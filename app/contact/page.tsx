@@ -36,7 +36,7 @@ export default function ContactPage() {
       `*Message:*%0A${formData.message}`
 
     // Open WhatsApp with the pre-filled message
-    window.open(`https://wa.me/918169290667?text=${message}`, "_blank")
+    window.open(`https://wa.me/918655072352?text=${message}`, "_blank")
 
     setFormSubmitted(true)
   }
@@ -78,8 +78,8 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-semibold mb-1 bell-mt">Phone</h3>
                   <p className="text-gray-600 bookman">
-                    <a href="tel:+9186550 72352" className="hover:text-green-600">
-                      +91 86550 72352
+                    <a href="tel:+918655072352" className="hover:text-green-600">
+                      +91 8655072352
                     </a>
                   </p>
                 </div>
@@ -254,7 +254,7 @@ export default function ContactPage() {
               </p>
               <Button
                 className="w-full bg-[#25D366] hover:bg-[#22c55e] hover-glow"
-                onClick={() => window.open("https://wa.me/918169290667", "_blank")}
+                onClick={() => window.open("https://wa.me/918655072352", "_blank")}
               >
                 <svg
                   className="h-5 w-5 mr-2"

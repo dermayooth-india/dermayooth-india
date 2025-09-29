@@ -172,8 +172,8 @@ function MainLayoutContent({ children }) {
                   <span className="text-black">Dermayooth Mumbai India</span>
                 </p>
                 <p className="flex items-start">
-                  <a href="tel:+917977150012" className="text-black hover:text-blue-950">
-                     +91 86550 72352
+                  <a href="tel:+918655072352" className="text-black hover:text-blue-950">
+                     +91 8655072352
                   </a>
                 </p>
                 <p className="flex items-start">
@@ -203,7 +203,7 @@ function MainLayoutContent({ children }) {
 
       {/* WhatsApp Button */}
       <a
-        href="https://wa.me/918169290667"
+        href="https://wa.me/918655072352"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
