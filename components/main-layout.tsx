@@ -169,7 +169,7 @@ function MainLayoutContent({ children }) {
               <h3 className="text-lg mb-6 bell-mt">Contact Us</h3>
               <address className="not-italic space-y-4 bookman">
                 <p className="flex items-start">
-                  <span className="text-black">No. 02, Ground Floor, Alpesh Building, Thane - 401101, Maharashtra, India.</span>
+                  <span className="text-black">Dermayooth Mumbai India</span>
                 </p>
                 <p className="flex items-start">
                   <a href="tel:+917977150012" className="text-black hover:text-blue-950">
@@ -189,21 +189,21 @@ function MainLayoutContent({ children }) {
             <p className="text-black bookman">© {new Date().getFullYear()} DERMAYOOTH. All rights reserved.</p>
 
             {/* Admin Access Button */}
-            <Link
+            {/* <Link
               href="/admin/login"
               className="flex items-center text-black hover:text-blue-950 transition-colors text-sm"
               title="Admin Access"
             >
               <Settings className="h-4 w-4 mr-1" />
               <span className="hidden sm:inline">Admin</span>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </footer>
 
       {/* WhatsApp Button */}
       <a
-        href="https://wa.me/917977150012"
+        href="https://wa.me/918169290667"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"

@@ -136,8 +136,8 @@ export default function CareersPage() {
         <div className="text-center text-gray-600 bookman">
           <p>For any questions regarding careers at DERMAYOOTH, please contact us at:</p>
           <p className="mt-2">
-            <a href="mailto:careers@DERMAYOOTH.com" className="text-green-600 hover:underline">
-              careers@DERMAYOOTH.com
+            <a href="mailto:manojnagar@dermayooth.com" className="text-green-600 hover:underline">
+              manojnagar@dermayooth.com
             </a>
           </p>
         </div>

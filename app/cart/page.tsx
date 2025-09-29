@@ -58,7 +58,7 @@ function CartContent() {
       `*Message:*%0A${formData.message}`
 
     // Open WhatsApp with the pre-filled message
-    window.open(`https://wa.me/917977150012?text=${message}`, "_blank")
+    window.open(`https://wa.me/918169290667?text=${message}`, "_blank")
 
     setFormSubmitted(true)
     clearCart()
