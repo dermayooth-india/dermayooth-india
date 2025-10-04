@@ -375,7 +375,7 @@ function ProductDetailContent() {
                   </ol>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <h4 className="text-lg font-normal mb-3 bell-mt tracking-wide">Recommended Usage:</h4>
                     <ul className="space-y-2">
@@ -411,7 +411,7 @@ function ProductDetailContent() {
                       </li>
                     </ul>
                   </div>
-                </div>
+                </div> */}
               </TabsContent>
 
               <TabsContent value="reviews" className="space-y-4">
