@@ -338,7 +338,7 @@ function ProductDetailContent() {
                       <p className="text-gray-700 bookman">{product.specifications.size}</p>
                     </div>
                     <div className="bg-gray-50 p-4 rounded-md">
-                      <h5 className="font-medium mb-2 bell-mt">Skin Type</h5>
+                      <h5 className="font-medium mb-2 bell-mt">Suitable For</h5>
                       <p className="text-gray-700 bookman">{product.specifications.skinType}</p>
                     </div>
                     <div className="bg-gray-50 p-4 rounded-md">
