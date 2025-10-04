@@ -132,7 +132,7 @@ function MainLayoutContent({ children }) {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             {/* About */}
             <div>
-              <h3 className="text-xl mb-6 bell-mt tracking-wide">DERMAYOOTH INDIA LABORATORIES</h3>
+              <h3 className="text-xl mb-6 bell-mt tracking-wide">DERMAYOOTH INDIA </h3>
               <p className="text-black mb-6 bookman">
                 Premium aesthetic solutions for your skin. Dermatologist recommended products for all your skincare
                 needs.
