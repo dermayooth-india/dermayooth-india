@@ -308,8 +308,7 @@ function ProductDetailContent() {
                 </TabsTrigger>
                 <TabsTrigger
                   value="reviews"
-                  className="data-[state=active]:bg-gray-900 data-[state=active]:text-white hover-effect bg-gray-100"
-                >
+                  className="data-[state=active]:bg-gray-900 data-[state=active]:text-white hover-effect bg-gray-100">
                   Reviews
                 </TabsTrigger>
               </TabsList>
@@ -414,7 +413,7 @@ function ProductDetailContent() {
                 </div> */}
               </TabsContent>
 
-              <TabsContent value="reviews" className="space-y-4">
+              {/* <TabsContent value="reviews" className="space-y-4">
                 <h3 className="text-xl font-normal mb-4 bell-mt tracking-wide">Customer Reviews</h3>
 
                 <div className="flex items-center mb-6">
@@ -516,7 +515,7 @@ function ProductDetailContent() {
                     </div>
                   ))}
                 </div>
-              </TabsContent>
+              </TabsContent> */}
             </Tabs>
           </div>
 
